@@ -5,6 +5,7 @@ import java.util.Random;
 public class BogoSorter extends Sorter {
 	public BogoSorter() {
 		type = "Bogo";
+		
 	}
 	
 	// Bogo sort is a joke sorting algorithm. It is considered the most 
@@ -20,6 +21,14 @@ public class BogoSorter extends Sorter {
 	//1. Complete the sort method using the Bogo sort algorithm. 
 	@Override
 	void sort(int[] array, SortingVisualizer display) {
-
+		while(_00_SortedArrayChecker.intArraySorted(array)==false) {
+			Random ra  = new Random();
+			int r = ra.nextInt(array.length);
+			Random rand = new Random ();
+			int ran = rand.nextInt(array.length);
+			int first = array[r];
+			array[r] = array[ran];
+			array[ran] = first;
+		}
 	}
 }
