@@ -66,7 +66,7 @@ public static void main(String[] args) {
 			 middle = arr[i+1];
 		}
 		
-		System.out.println(middle);
+		//System.out.println(middle);
 		
 		return middle;
 	}
