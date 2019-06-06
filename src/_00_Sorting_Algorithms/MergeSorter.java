@@ -28,7 +28,7 @@ public class MergeSorter extends Sorter {
 			int middle = (low + high) / 2;
 			mergeSort(array, low, middle, display);
 			mergeSort(array, middle + 1, high, display);
-			for (int i = low; i < high; i++) {
+			for (int i = low; i < high+1; i++) {
 				tempArray[i] = array[i];
 	
 			}
@@ -44,14 +44,17 @@ public class MergeSorter extends Sorter {
 				} else {
 					array[k] = tempArray[j];
 					j++;
-					k++;
-				while (i <= middle) {
+				
+				}
+				k++;
+				
+			}
+			while (i <= middle) {
 						array[k] = tempArray[i];
 						k++;
 						i++;
-					}
+					
 				}	
-			}
 		}
 		// 3. Create an integer called middle and set it
 		// equal to the half way point between low and high

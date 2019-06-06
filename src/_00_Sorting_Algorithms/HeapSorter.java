@@ -15,6 +15,7 @@ public class HeapSorter extends Sorter {
 	void sort(int[] array, SortingVisualizer display) {
 		// 8. create an integer called n and set it equal
 		// to the length of the array
+	
 		int n = array.length;
 		// 9. make a for loop that starts half way between
 		// 0 and n and counts down until it is less than 0.
@@ -39,6 +40,7 @@ public class HeapSorter extends Sorter {
 	public void heapSort(int[] array, int n, int i, SortingVisualizer display) {
 		// 2. create an integer called largest and set it equal to i
 		int largest = i;
+		display.updateDisplay();
 		// 3. create an integer called l and set it equal to 2 * i + 1
 		int l = 2 * i + 1;
 
