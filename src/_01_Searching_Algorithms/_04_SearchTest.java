@@ -16,6 +16,7 @@ class _04_SearchTest {
 		assertEquals(2, _00_LinearSearch.linearSearch(words, "Two"));
 		assertEquals(1, _00_LinearSearch.linearSearch(words, "One"));
 		assertEquals(0, _00_LinearSearch.linearSearch(words, "Zero"));
+		
 	}
 
 	@Test
