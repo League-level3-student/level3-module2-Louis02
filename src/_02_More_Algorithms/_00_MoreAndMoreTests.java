@@ -86,14 +86,12 @@ public class _00_MoreAndMoreTests {
 
 	private boolean isPrime(int i) {
 		// TODO Auto-generated method stub
-		boolean ans = false;
-		for (int k = 0; k < i; k++) {
-		 if (k%i==0) {
-				ans = true;
+		boolean ans = true;
+		for (int k = 2; k < i; k++) {
+		 if (i%k==0) {
+				ans = false;
 			}
-		 else {
-			 ans = false;
-		 }
+		 
 		}
 		return ans;
 	}

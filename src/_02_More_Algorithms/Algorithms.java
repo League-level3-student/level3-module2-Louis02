@@ -99,15 +99,19 @@ public class Algorithms {
 
 		return sortedSequences;
 	}
-	public static List<String> sortWords(List<String> words ){
-		for(int i = 0; i<words.size()-1;i++) {
-			for(int j = i+1; j<words.size();j++) {
-				words.get(i).compareTo(words.get(j));
+
+	public static List<String> sortWords(List<String> words) {
+		for (int i = 0; i < words.size() - 1; i++) {
+			for (int j = i + 1; j < words.size(); j++) {
+				if (words.get(i).compareTo(words.get(j)) >= 1) {
+					String first = words.get(i);
+					words.set(i, words.get(j));
+					words.set(j, first);
+				}
+
 			}
-			
+
 		}
-		
 		return words;
-		
 	}
 }
