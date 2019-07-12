@@ -1,4 +1,4 @@
-package _00_Text_Funkifier;
+
 
 import static org.junit.Assert.*;
 
@@ -31,15 +31,15 @@ public class _00_TestSpecialString {
 		System.out.println(mcs);
 		assertEquals("tHiS Is aLsO A TeSt", mcs.toString());
 	}
-//	
-//	//4. Create your own class that extends SpecialString.
-//	//   Override the funkifyText method to make any kind of 
-//	//   new String you want. Then use the assertEquals method in
-//	//   the JUnitTest case below to test your customized Special String.
+////	
+////	//4. Create your own class that extends SpecialString.
+////	//   Override the funkifyText method to make any kind of 
+////	//   new String you want. Then use the assertEquals method in
+////	//   the JUnitTest case below to test your customized Special String.
 	@Test
 	public void testCustomString() {
 	SpecialString ss = new VowelCapitalizer ("This is also a test");
 	System.out.println(ss);
-	assertEquals("thIs Is AlsO A tEst", ss.toString());
+	assertEquals("This Is Also A Test", ss.toString());
 	}
 }

@@ -1,4 +1,4 @@
-package _00_Text_Funkifier;
+
 
 public abstract class SpecialString implements TextFunkifier{
 	protected String s;
